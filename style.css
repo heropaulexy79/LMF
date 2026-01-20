@@ -711,3 +711,82 @@ p { font-weight: 300; font-size: 0.95rem; color: var(--text-muted); }
         font-size: 2rem;
     }
 }
+
+/* --- SERVICES PAGE STYLES --- */
+
+/* Reverse split layout */
+.split-layout.reverse {
+    flex-direction: row-reverse;
+}
+
+/* Service section icons */
+.text-col .s-icon {
+    margin-bottom: 20px;
+}
+
+/* Service subheading */
+.service-subhead {
+    font-size: 1.1rem;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: var(--bg-dark);
+}
+
+/* Service list */
+.service-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.service-list li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 12px;
+    font-size: 0.95rem;
+    color: var(--text-muted);
+}
+
+.service-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 8px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: linear-gradient(to right, var(--brand-pink), var(--brand-blue));
+}
+
+/* Process grid for services page */
+.process-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.process-number {
+    font-family: var(--font-serif);
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--brand-blue);
+    display: block;
+    margin-bottom: 15px;
+}
+
+/* Services page mobile responsive */
+@media (max-width: 900px) {
+    .split-layout.reverse {
+        flex-direction: column;
+    }
+
+    .process-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .service-list li {
+        font-size: 0.9rem;
+    }
+}
