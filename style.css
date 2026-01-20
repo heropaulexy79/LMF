@@ -138,7 +138,7 @@ p { font-weight: 300; font-size: 0.95rem; color: var(--text-muted); }
     border-radius: 30px; /* Softer, modern roundness */
     transition: 0.3s;
     border: none; cursor: pointer;
-    box-shadow: 0 4px 15px rgba(242, 124, 162, 0.4); /* Pink shadow */
+    box-shadow: 0 4px 15px rgba(242, 124, 162, 0.1); /* Pink shadow */
 }
 /* Hover turns to Brand Blue */
 .btn-brand:hover { background: var(--brand-pink); box-shadow: 0 4px 15px rgba(58, 188, 229, 0.4); transform: translateY(-2px);}
